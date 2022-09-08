@@ -92,6 +92,8 @@ class EEPLmodel(nn.Module):
 
             softmax_logit = F.softmax(inputlogit, dim=1)
 
+            softmax_logit = softmax_logit + masklabel
+            
             logits.append(softmax_logit)
 
         logits = torch.cat(logits, dim=0).to(self.device)   # batch*V
