@@ -103,22 +103,6 @@ class EEPLmodel(nn.Module):
 
 
 
-'''
-device = 'cuda' if torch.cuda.is_available() else 'cpu'
-eepl = EEPLmodel(q_embs=embs, concatsize=1536, vocab_size=30567).to(device)
-'''
-
-'''
-output = eepl(inputbatch)
-print(output)
-print(output.shape)
-'''
-
-'''
-for name, param in eepl.named_parameters():
-    if param.requires_grad:
-          print(name)
-'''
 
 
 
