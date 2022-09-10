@@ -64,8 +64,7 @@ def process_test(file):
         newsample['text'] = sample['sentence']
         newsample['event_type'] = sample['sentence_type']
         newsample['trigger'] = sample['sentence_keyword']
-        newsample['prompt'] = sample['sentence'] + ' ' + '[SEP] The text is talking about' + ' ' + sample[
-            'sentence_type'] + '. The trigger is [MASK].'
+        newsample['prompt'] = sample['sentence'] + ' ' + '[SEP] The text is talking about' + ' ' + sample['sentence_type'] + '. The trigger is [MASK].'
 
         trigger_token = tokenizer(newsample['trigger'], return_tensors='pt', add_special_tokens=False).to(device)
         trigger_ids = trigger_token["input_ids"].to(device)  # 1*n
