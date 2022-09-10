@@ -99,31 +99,5 @@ class EEPLmodel(nn.Module):
         return logits
 
 
-'''
-plm = AutoAdapterModel.from_pretrained('bert-base-uncased')
-plm.add_adapter('bert-base-uncased-pf-wikihop')
-plm.train_adapter('bert-base-uncased-pf-wikihop')
-
-device = 'cuda' if torch.cuda.is_available() else 'cpu'
-eepl = EEPLmodel(q_embs=embs, PLM=plm, concatsize=1536, vocab_size=30567).to(device)
-'''
-
-'''
-output = eepl(inputbatch)
-print(output)
-print(output.shape)
-'''
-
-'''
-for name, param in eepl.named_parameters():
-    if param.requires_grad:
-          print(name)
-'''
-
-
-
-
-
-
 
 
