@@ -5,8 +5,8 @@ import torch
 import json
 
 def process_train(file):
-    fr = open(file, 'rb')  # open的参数是pkl文件的路径
-    data = pickle.load(fr)  # 读取pkl文件的内容
+    fr = open(file, 'rb')  
+    data = pickle.load(fr)  
 
     newfile = jsonlines.open("datasets_processed/train.json", "w")
 
