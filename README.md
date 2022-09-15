@@ -8,6 +8,10 @@ conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit
 pip install -r requirements.txt
 ```
 
+# Add triggers to vocabulary
+```
+python new_PLM.py
+```
 
 # Training and Testing
 ```
