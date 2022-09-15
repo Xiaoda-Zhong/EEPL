@@ -8,10 +8,6 @@ conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit
 pip install -r requirements.txt
 ```
 
-# Data Preprocessing
-```
-python preprocessing.py
-```
 
 # Training and Testing
 ```
